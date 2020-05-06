@@ -1,0 +1,163 @@
+body {
+    font-family: 'Inter', sans-serif;
+
+
+
+}
+
+
+.darkModeToggleContainer {
+    display: inline-flex;
+}
+
+
+.headerAndDarkModeToggle {
+    padding-top: 2em;
+}
+
+.headerAndDarkModeToggle h1 {
+    font-weight: bolder !important;
+
+}
+
+.darkModeText {
+    font-weight: 700;
+}
+
+
+.appContainer {
+    height: 100%;
+}
+
+.followerCounter {
+    height: 13em;
+    border-radius: 2%;
+    text-align: center;
+    transition-duration: .2s;
+
+}
+
+
+
+.followerCounter h1 {
+    font-weight: bolder !important;
+
+}
+
+.followerCounterSubheading {
+    margin-top: -.8em;
+    letter-spacing: .2em;
+}
+
+.accountName {
+    font-weight: bold;
+    padding-left: 5px;
+    font-size: .8em;
+    padding-top: 1.5em;
+}
+
+.facebookFollowerColumn {
+
+    border-top: 5px solid hsl(203, 89%, 53%);
+}
+
+.twitterFollowerColumn {
+    border-top: 5px solid hsl(195, 100%, 50%);
+}
+
+.instagramFollowerColumn {
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 10;
+}
+
+
+.youtubeFollowerColumn {
+    border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+
+.followerUpdate {
+    padding-top: 1em;
+    font-size: 14px;
+}
+
+.increase {
+    color: hsl(163, 72%, 41%);
+
+}
+
+.decrease {
+    color: hsl(356, 69%, 56%);
+
+}
+
+
+.overViewCellLeft {
+    padding: 0px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.overViewCellLeft p {
+    font-weight: 700;
+    padding-top: 1.5em;
+}
+
+.overViewCellLeft h1 {
+    font-weight: 700;
+    padding-top: .5em;
+}
+
+.overViewCellRight {
+    text-align: right;
+    padding: 0px;
+    padding-top: 1em;
+
+}
+
+.overViewCellContent {
+    width: 80%;
+    margin: auto;
+}
+
+.statistic {
+    padding-top: 3.5em;
+}
+
+.overViewContentContainer {
+    padding-bottom: 1.8em;
+}
+
+
+@media (max-width: 770px) {
+    .followerCounter {
+        margin-bottom: 2em;
+    }
+    .darkModeToggle {
+        text-align: right;
+    }
+    .darModeText{
+        text-align: left;
+    }
+    .headerAndDarkModeToggle h1 {
+    font-size: 2em;
+}
+}
+
+@media (max-width: 570px) {
+    .followerCounter {
+        margin-bottom: 2em;
+    }
+
+
+
+
+}
+
+.disclaimer {
+    width:50%;
+    margin: auto;
+    text-align: center;
+    color:white;
+}
