@@ -1,8 +1,15 @@
 body {
     font-family: 'Inter', sans-serif;
+    height:100vh !important;
 
+}
 
+#root {
+    height:100%;
+}
 
+.appContainer{
+    height: 100% !important;
 }
 
 
@@ -12,6 +19,9 @@ body {
 
 
 .headerAndDarkModeToggle {
+    padding-top: 2em;
+}
+.darkModeToggleColumn{
     padding-top: 2em;
 }
 
@@ -36,7 +46,6 @@ body {
     transition-duration: .2s;
 
 }
-
 
 
 .followerCounter h1 {
@@ -134,15 +143,18 @@ body {
     .followerCounter {
         margin-bottom: 2em;
     }
+
     .darkModeToggle {
         text-align: right;
     }
-    .darModeText{
+
+    .darModeText {
         text-align: left;
     }
+
     .headerAndDarkModeToggle h1 {
-    font-size: 2em;
-}
+        font-size: 2em;
+    }
 }
 
 @media (max-width: 570px) {
@@ -151,13 +163,173 @@ body {
     }
 
 
+}
+
+.disclaimer {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+
+.dark.appContainer {
+    background-color: hsl(230, 17%, 14%) !important;
+    transition-duration: .3s;
+
+}
+
+
+.dark .headerAndDarkModeToggle {
+    color: white;
+    transition-duration: .3s;
 
 
 }
 
-.disclaimer {
-    width:50%;
-    margin: auto;
-    text-align: center;
-    color:white;
+.dark .overViewHeader {
+    font-weight: 700;
+    color: white;
+    padding-top: 1em;
+    transition-duration: .3s;
+
+
+}
+
+.dark .overViewCell {
+    height: 8.5em;
+    border-radius: 2.5%;
+    background-color: hsl(228, 28%, 20%);
+    margin-top: 1em;
+    transition-duration: .3s;
+
+}
+
+.dark .followerCounter {
+    background-color: hsl(228, 28%, 20%);
+    transition-duration: .3s;
+
+
+}
+
+.dark .followerCounter:hover {
+    background-color: hsl(229, 21%, 26%);
+    transition-duration: .2s;
+
+
+}
+
+
+.dark .followerCounter h1 {
+    color: #FFFFFF;
+    transition-duration: .3s;
+
+}
+
+.dark .followerCounterSubheading {
+    color: hsl(228, 34%, 66%);
+    transition-duration: .3s;
+
+
+}
+
+.dark .accountName {
+    color: hsl(228, 34%, 66%);
+    transition-duration: .3s;
+
+
+}
+
+.dark .overViewCellLeft {
+    color: white;
+    transition-duration: .3s;
+
+
+}
+
+.dark .overViewCellLeft p {
+    color: hsl(228, 34%, 66%);
+    transition-duration: .3s;
+
+
+}
+
+
+.light.appContainer {
+    background-color: #f4f5f7 !important;
+    transition-duration: .3s;
+
+
+}
+
+
+
+
+
+.light .headerAndDarkModeToggle {
+    color: hsl(230, 17%, 14%);
+    transition-duration: .3s;
+
+
+}
+
+.light .overViewHeader {
+    font-weight: 700;
+    color:  hsl(230, 17%, 14%);
+    padding-top: 1em;
+    transition-duration: .3s;
+
+}
+
+.light .overViewCell {
+    height: 8.5em;
+    border-radius: 2.5%;
+    background-color: hsl(227, 47%, 96%);
+    transition-duration: .3s;
+
+    margin-top: 1em;
+}
+
+.light .followerCounter {
+    background-color: hsl(227, 47%, 96%);
+    transition-duration: .3s;
+
+
+}
+
+.light .followerCounter:hover {
+    background-color: hsl(228, 17%, 89%);
+    transition-duration: .2s;
+
+}
+
+
+.light .followerCounter h1 {
+    color:  hsl(230, 17%, 14%);
+    transition-duration: .3s;
+
+}
+
+.light .followerCounterSubheading {
+    color: hsl(228, 12%, 44%);
+transition-duration: .3s;
+
+}
+
+.light .accountName {
+    color: hsl(228, 12%, 44%);
+transition-duration: .3s;
+
+}
+
+.light .overViewCellLeft {
+    color: hsl(230, 17%, 14%);
+    transition-duration: .3s;
+
+
+}
+
+.light .overViewCellLeft p {
+    color: hsl(228, 12%, 44%);
+transition-duration: .3s;
 }

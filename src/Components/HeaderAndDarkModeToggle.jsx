@@ -10,7 +10,7 @@ import '../Css/AppContainer.css';
 class HeaderAndDarkModeToggle extends Component {
     render() {
         return (
-            <div className={'headerAndDarkModeToggle'}>
+            <div className={'headerAndDarkModeToggle'  + ` ${this.props.theme}`}>
                 <Container>
                     <Row>
                         <Col xs={12} sm={12} md={6}>
@@ -20,27 +20,27 @@ class HeaderAndDarkModeToggle extends Component {
 
                         </Col>
                         <Col xs={12} sm={12} md={6}>
-                            <Container className={'darkModeToggleColumn'}>
+                            <Container className={'darkModeToggleColumn'  + ` ${this.props.theme}`}>
                                 <Row>
                                     <Col xs={0} sm={0} md={6}>
 
 
 
                                     </Col>
-                                    <Col className={'darkModeText'} xs={6} sm={6} md={3}>
-                                        {/*<p> Dark Mode </p>*/}
+                                    <Col className={'darkModeText'  + ` ${this.props.theme}`} xs={6} sm={6} md={3}>
+                                        <p> Light Mode </p>
 
                                     </Col>
-                                    <Col  className={'darkModeToggle'} xs={6} sm={6} md={3}>
-                                        {/*<Form className={'darkModeToggleContainer'}>*/}
-                                        {/*    <Form.Check*/}
-                                        {/*        onClick={this.props.toggleDarkMode}*/}
-                                        {/*        type="switch"*/}
-                                        {/*        id="custom-switch"*/}
-                                        {/*        label=""*/}
+                                    <Col  className={'darkModeToggle'  + ` ${this.props.theme}`} xs={6} sm={6} md={3}>
+                                        <Form className={'darkModeToggleContainer'}>
+                                            <Form.Check
+                                                onClick={this.props.toggleDarkMode}
+                                                type="switch"
+                                                id="custom-switch"
+                                                label=""
 
-                                        {/*    />*/}
-                                        {/*</Form>*/}
+                                            />
+                                        </Form>
                                     </Col>
                                 </Row>
                             </Container>

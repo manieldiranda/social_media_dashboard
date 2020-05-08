@@ -1,28 +1,27 @@
 import React, {Component} from 'react';
 import HeaderAndDarkModeToggle from './HeaderAndDarkModeToggle'
 import FollowerCountColumns from "./FollowerCountColumns";
-import '../Css/DarkMode.css'
 import '../Css/AppContainer.css'
 import OverviewComponents from "./OverviewComponents";
 
 class AppContainer extends Component {
     constructor(props) {
         super(props);
-        this.state = {darkMode: true};
+        this.state = {theme: 'dark'};
 
     }
 
 
     toggleDarkMode = () => {
         {
-            this.state.darkMode === true ? (
+            this.state.theme === 'light' ? (
                 this.setState({
-                    darkMode: false
+                    theme: 'dark'
                 })
 
             ) : (
                 this.setState({
-                    darkMode: true
+                    theme: 'light'
                 })
 
             )
@@ -32,17 +31,17 @@ class AppContainer extends Component {
 
     render() {
         return (
-            <div className={'appContainer'}>
+            <div className={' appContainer' + ` ${this.state.theme}`}>
                 <HeaderAndDarkModeToggle
                     toggleDarkMode={this.toggleDarkMode}
-                    darkMode={this.state.darkMode}
+                    theme={this.state.theme}
                 />
                 <FollowerCountColumns
-                    darkMode={this.state.darkMode}
+                    theme={this.state.theme}
 
                 />
                 <OverviewComponents
-                    darkMode={this.state.darkMode}
+                    theme={this.state.theme}
 
 
                 />
