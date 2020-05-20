@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -28,9 +27,9 @@ class OverviewComponents extends Component {
                                     </Col>
                                     <Col className={'overViewCellRight'  + ` ${this.props.theme}`} xs={6}>
                                         <div>
-                                            <img src={facebookIcon}/>
+                                            <img src={facebookIcon} alt={'FacebookIcon'}/>
                                         </div>
-                                        <p className={'statistic decrease'  + ` ${this.props.theme}`}><img src={downIcon}/> 3% </p>
+                                        <p className={'statistic decrease'  + ` ${this.props.theme}`}><img src={downIcon} alt={'downIcon'}/> 3% </p>
                                     </Col>
                                 </Row>
                             </div>
@@ -45,9 +44,9 @@ class OverviewComponents extends Component {
                                     </Col>
                                     <Col className={'overViewCellRight'  + ` ${this.props.theme}`} xs={6}>
                                         <div>
-                                            <img src={facebookIcon}/>
+                                            <img src={facebookIcon} alt={'FacebookIcon'}/>
                                         </div>
-                                        <p className={'statistic decrease'  + ` ${this.props.theme}`}><img src={downIcon}/> 2% </p>
+                                        <p className={'statistic decrease'  + ` ${this.props.theme}`}><img src={downIcon} alt={'downIcon'}/> 2% </p>
                                     </Col>
                                 </Row>
                             </div>
@@ -63,9 +62,9 @@ class OverviewComponents extends Component {
                                     </Col>
                                     <Col className={'overViewCellRight'  + ` ${this.props.theme}`} xs={6}>
                                         <div>
-                                            <img src={instaIcon}/>
+                                            <img src={instaIcon} alt={'instaIcon'}/>
                                         </div>
-                                        <p className={'statistic increase'  + ` ${this.props.theme}`}><img src={upIcon}/> 2257% </p>
+                                        <p className={'statistic increase'  + ` ${this.props.theme}`}><img src={upIcon} alt={'upIcon'}/> 2257% </p>
                                     </Col>
                                 </Row>
 
@@ -82,9 +81,9 @@ class OverviewComponents extends Component {
                                     </Col>
                                     <Col className={'overViewCellRight'  + ` ${this.props.theme}`} xs={6}>
                                         <div>
-                                            <img src={instaIcon}/>
+                                            <img src={instaIcon} alt={'instaIcon'}/>
                                         </div>
-                                        <p className={'statistic increase'  + ` ${this.props.theme}`}><img src={upIcon}/> 1375% </p>
+                                        <p className={'statistic increase'  + ` ${this.props.theme}`}><img src={upIcon} alt={'FacebookIcon'}/> 1375% </p>
                                     </Col>
                                 </Row>
                             </div>
@@ -100,9 +99,9 @@ class OverviewComponents extends Component {
                                     </Col>
                                     <Col className={'overViewCellRight'  + ` ${this.props.theme}`} xs={6}>
                                         <div>
-                                            <img src={twitterIcon}/>
+                                            <img src={twitterIcon} alt={'twitterIcon'}/>
                                         </div>
-                                        <p className={'statistic increase'  + ` ${this.props.theme}`}><img src={upIcon}/> 303% </p>
+                                        <p className={'statistic increase'  + ` ${this.props.theme}`}><img src={upIcon} alt={'upIcon'}/> 303% </p>
                                     </Col>
                                 </Row>
                             </div>
@@ -117,9 +116,9 @@ class OverviewComponents extends Component {
                                     </Col>
                                     <Col className={'overViewCellRight'  + ` ${this.props.theme}`} xs={6}>
                                         <div>
-                                            <img src={twitterIcon}/>
+                                            <img src={twitterIcon} alt={'twitterIcon'}/>
                                         </div>
-                                        <p className={'statistic increase'  + ` ${this.props.theme}`}><img src={upIcon}/> 553% </p>
+                                        <p className={'statistic increase'  + ` ${this.props.theme}`}><img src={upIcon} alt={'upIcon'}/> 553% </p>
                                     </Col>
                                 </Row>
                             </div>
@@ -135,9 +134,9 @@ class OverviewComponents extends Component {
                                     </Col>
                                     <Col className={'overViewCellRight'  + ` ${this.props.theme}`} xs={6}>
                                         <div>
-                                            <img src={youtubeIcon}/>
+                                            <img src={youtubeIcon} alt={'youtubeIcon'} alt={'youtubeIcon'}/>
                                         </div>
-                                        <p className={'statistic decrease'  + ` ${this.props.theme}`}><img src={downIcon}/> 19% </p>
+                                        <p className={'statistic decrease'  + ` ${this.props.theme}`}><img src={downIcon} alt={'downIcon'}/> 19% </p>
                                     </Col>
                                 </Row>
 
@@ -154,9 +153,9 @@ class OverviewComponents extends Component {
                                     </Col>
                                     <Col className={'overViewCellRight'  + ` ${this.props.theme}`} xs={6}>
                                         <div>
-                                            <img src={youtubeIcon}/>
+                                            <img src={youtubeIcon} alt={'youtubeIcon'}/>
                                         </div>
-                                        <p className={'statistic decrease'  + ` ${this.props.theme}`}><img src={downIcon}/> 12% </p>
+                                        <p className={'statistic decrease'  + ` ${this.props.theme}`}><img src={downIcon} alt={'downIcon'}/> 12% </p>
                                     </Col>
                                 </Row>
                             </div>
